@@ -1,0 +1,39 @@
+body{
+    background-image: url('https://www.shutterstock.com/image-vector/body-mass-index-fitness-exercise-600nw-2011181516.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.bmi{
+    height: 400px;
+    width: 500px;
+    background-color: white;
+    opacity: 0.9;
+    margin-left: 550px;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-top: 100px;
+    font-size: 25px;
+
+}
+input[type=text] {
+    width: 50%;
+    height: 30px;
+
+ 
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  .bmi button{
+  
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+   
+      
+ }

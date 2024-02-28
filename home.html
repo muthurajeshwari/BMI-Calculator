@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="home.css">
+        
+    </head>
+    <body>
+        <center><h1>BMI Calculator</h1></center>
+        <div class="bmi">
+                <label for="height">Enter your height(in cm):</label><br>
+                <input type="text" id="height" name="hg"><br><br>
+                <label for="weight">Enter your weight(in Kg):</label><br>
+                <input type="text" id="weight" name="wg"><br><br>
+                <button  type="submit" onclick="bmi()">Calculate</button><br>
+                <div id="result"></div>
+                <div id="obs"></div>
+                
+        </div>
+    </body>
+        <script>
+             function bmi(){
+                var h1=document.getElementById("height").value;
+                var w1=document.getElementById("weight").value;
+            
+          
+                 let res=((parseFloat(w1))/(parseFloat(h1)/100)**2);
+                 console.log(res);
+                 document.getElementById("result").innerHTML=res;
+                 if(res<18.6)
+                 {
+                     document.getElementById("obs").innerHTML="UnderWeight";
+                 }
+                 else if(res>18.6 && res<23.5)
+                 {
+                    document.getElementById("obs").innerHTML="Normal";
+                 }
+                 else{
+                    document.getElementById("obs").innerHTML="Obesity";
+                 }
+     
+             };
+     
+             
+     
+         </script>
+
+       
+
+   
+</html>
